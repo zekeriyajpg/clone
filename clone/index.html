@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Özel CSS -->
+    <style>
+        /* Genel ayarlar */
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar ayarları */
+        .navbar {
+            height: 54px;
+            background-color: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 30px;
+            margin-left: 192px;
+        }
+
+        /* Arama çubuğu */
+        .search-form input::placeholder {
+            background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat left center;
+            padding-left: 30px;
+            background-size: 20px 20px;
+        }
+
+        /* Kartlar için ayarlar */
+        .card-header, .card-footer {
+            background-color: white;
+            border: none;
+        }
+
+        /* Responsive menü ayarları */
+        @media (max-width: 576px) {
+            .menu-icons {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/50" alt="Logo" class="logo">
+            </a>
+            <form class="d-flex search-form mx-3">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div class="d-flex align-items-center menu-icons">
+                <i class="fas fa-home mx-2"></i>
+                <i class="fas fa-paper-plane mx-2"></i>
+                <i class="fas fa-plus-square mx-2"></i>
+                <i class="fas fa-user mx-2"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İçerik Alanı -->
+    <div class="container-fluid" style="padding-top: 60px;">
+        <div class="row">
+            <!-- Sol Panel (Hikayeler) -->
+            <div class="col-md-4">
+                <!-- Hikaye içeriği buraya -->
+            </div>
+            <!-- Orta Panel (Gönderiler) -->
+            <div class="col-md-6 mt-2">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Kullanıcı Adı</strong>
+                        <i class="fas fa-ellipsis-h float-end"></i>
+                    </div>
+                    <img src="https://via.placeholder.com/500x400" class="card-img-top" alt="Gönderi Resmi">
+                    <div class="card-footer">
+                        <i class="fas fa-heart mx-2"></i>
+                        <i class="fas fa-comment mx-2"></i>
+                        <i class="fas fa-paper-plane mx-2"></i>
+                        <i class="fas fa-bookmark float-end"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Sağ Panel -->
+            <div class="col-md-2">
+                <div class="right-panel">
+                    <!-- Sağ panel içeriği -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

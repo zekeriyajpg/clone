@@ -1,0 +1,42 @@
+/* Genel ayarlar */
+body {
+    background-color: #fafafa; /* Arka plan rengi */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar ayarları */
+.navbar {
+    height: 54px;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 30px;
+    margin-left: 192px;
+}
+
+/* Arama çubuğu */
+.search-form input::placeholder {
+    background: url('../images/search-icon.png') no-repeat left center;
+    padding-left: 30px;
+    background-size: 20px 20px;
+}
+
+/* Gönderi kartları */
+.card-header, .card-body {
+    background-color: #ffffff;
+    border: none;
+}
+
+.card-img-top {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Responsive düzen */
+@media (max-width: 576px) {
+    .menu-icons {
+        display: none; /* Menü ikonlarını gizle */
+    }
+}
